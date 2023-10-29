@@ -20,8 +20,8 @@ public class AdopetConsoleApplication {
             while (chosenOption != 5) {
                 showMenu();
 
-                String textoDigitado = new Scanner(System.in).nextLine();
-                chosenOption = Integer.parseInt(textoDigitado);
+                String typedText = new Scanner(System.in).nextLine();
+                chosenOption = Integer.parseInt(typedText);
 
                 switch (chosenOption) {
                     case 1 -> executor.executeCommand(new ListShelterCommand());
